@@ -86,8 +86,8 @@ export default function Pricing() {
               data-index={index}
               className={`relative p-8 rounded-2xl border transition-all duration-500 ${
                 tier.recommended
-                  ? "border-accent bg-gradient-to-br from-accent/5 to-primary/5 shadow-xl shadow-accent/20 md:scale-105"
-                  : "border-border bg-white hover:border-accent hover:shadow-lg hover:shadow-accent/10"
+                  ? "border-accent bg-gradient-to-br from-accent/10 to-primary/10 shadow-xl shadow-accent/20 md:scale-105"
+                  : "border-border bg-slate-800 hover:border-accent hover:shadow-lg hover:shadow-accent/10"
               } ${visibleCards[index] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
               {tier.recommended && (
