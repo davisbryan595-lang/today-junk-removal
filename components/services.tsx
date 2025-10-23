@@ -3,37 +3,44 @@
 import { useEffect, useRef, useState } from "react"
 import { Card } from "@/components/ui/card"
 import { Trash2, Sofa, Hammer, Leaf, Home, Zap } from "lucide-react"
+import Image from "next/image"
 
 const services = [
   {
     icon: Trash2,
     title: "Junk Removal",
     description: "General junk removal for any type of unwanted items from your home or business.",
+    image: "/gallery-1.jpg",
   },
   {
     icon: Sofa,
     title: "Furniture & Appliance Removal",
     description: "Safe and efficient removal of large furniture pieces and old appliances.",
+    image: "/gallery-2.jpg",
   },
   {
     icon: Hammer,
     title: "Construction Debris Cleanup",
     description: "Professional cleanup and removal of construction waste and debris.",
+    image: "/gallery-3.jpg",
   },
   {
     icon: Leaf,
     title: "Yard Waste Removal",
     description: "Seasonal yard waste, branches, and landscaping debris removal.",
+    image: "/gallery-4.jpg",
   },
   {
     icon: Home,
     title: "Garage & Basement Cleanouts",
     description: "Complete cleanout services for garages, basements, and storage areas.",
+    image: "/gallery-5.jpg",
   },
   {
     icon: Zap,
     title: "Same-Day Service",
     description: "Emergency junk removal available with our fast same-day service option.",
+    image: "/gallery-6.jpg",
   },
 ]
 
