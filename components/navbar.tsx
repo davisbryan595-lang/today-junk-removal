@@ -23,12 +23,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative w-16 h-16 transition-all duration-300 group-hover:scale-110 animate-float">
+            <div className="relative w-20 h-20 transition-all duration-300 group-hover:scale-110 animate-float">
               <Image
                 src="/logo.png"
                 alt="Today Junk Removal"
-                width={64}
-                height={64}
+                width={80}
+                height={80}
                 className="w-full h-full object-contain drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300"
                 priority
               />
