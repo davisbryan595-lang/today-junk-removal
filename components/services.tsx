@@ -88,15 +88,28 @@ export default function Services() {
               <Card
                 key={index}
                 data-index={index}
-                className={`p-8 bg-slate-800 border border-border rounded-xl transition-all duration-500 hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-2 group cursor-pointer ${
+                className={`p-0 bg-slate-800 border border-border rounded-xl transition-all duration-500 hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-2 group cursor-pointer ${
                   visibleCards[index] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                <div className="mb-6 inline-block p-4 bg-primary/10 rounded-lg group-hover:bg-accent/10 transition-colors">
-                  <Icon className="w-8 h-8 text-primary group-hover:text-accent transition-colors" />
+                <div className="service-image-wrapper w-full h-48 relative overflow-hidden rounded-t-xl">
+                  <Image
+                    src={service.image}
+                    alt={`${service.title} image`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    priority={false}
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
-                <p className="text-foreground/60 leading-relaxed">{service.description}</p>
+
+                <div className="p-6">
+                  <div className="mb-4 inline-block p-3 bg-primary/10 rounded-lg group-hover:bg-accent/10 transition-colors">
+                    <Icon className="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-3">{service.title}</h3>
+                  <p className="text-foreground/60 leading-relaxed">{service.description}</p>
+                </div>
               </Card>
             )
           })}
