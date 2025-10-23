@@ -75,11 +75,7 @@ export default function About() {
           {/* Left: Image/Video placeholder */}
           <div className="relative">
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 overflow-hidden shadow-2xl">
-              <img
-                src="/junk-removal-team.png"
-                alt="Today Junk Removal Team"
-                className="w-full h-full object-cover"
-              />
+              <img src="/junk-removal-team.png" alt="Today Junk Removal Team" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-2xl" />
           </div>
@@ -114,7 +110,7 @@ export default function About() {
           {stats.map((stat, index) => (
             <Card
               key={index}
-              className="p-8 text-center bg-white border border-border hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 rounded-xl"
+              className="p-8 text-center bg-slate-800 border border-slate-700 hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all duration-300 rounded-xl"
             >
               <AnimatedCounter target={stat.value} suffix={stat.suffix} />
               <p className="text-foreground/60 mt-4 font-medium">{stat.label}</p>

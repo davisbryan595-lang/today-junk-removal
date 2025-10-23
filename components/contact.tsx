@@ -67,7 +67,7 @@ export default function Contact() {
           {/* Contact Information */}
           <div>
             <div className="space-y-8">
-              <Card className="p-6 bg-white border border-border rounded-xl hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all">
+              <Card className="p-6 bg-slate-800 border border-border rounded-xl hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg">
                     <Phone className="w-6 h-6 text-primary" />
@@ -81,7 +81,7 @@ export default function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-white border border-border rounded-xl hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all">
+              <Card className="p-6 bg-slate-800 border border-border rounded-xl hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg">
                     <Mail className="w-6 h-6 text-primary" />
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-white border border-border rounded-xl hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all">
+              <Card className="p-6 bg-slate-800 border border-border rounded-xl hover:border-accent hover:shadow-lg hover:shadow-accent/20 transition-all">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-primary/10 rounded-lg">
                     <MapPin className="w-6 h-6 text-primary" />
@@ -125,7 +125,7 @@ export default function Contact() {
           {/* Contact Form */}
           <div>
             {submitted ? (
-              <Card className="p-8 bg-white border border-border rounded-xl flex flex-col items-center justify-center min-h-96">
+              <Card className="p-8 bg-slate-800 border border-border rounded-xl flex flex-col items-center justify-center min-h-96">
                 <CheckCircle className="w-16 h-16 text-accent mb-4" />
                 <h3 className="text-2xl font-bold text-primary mb-2">Message Sent!</h3>
                 <p className="text-foreground/60 text-center">
@@ -133,7 +133,7 @@ export default function Contact() {
                 </p>
               </Card>
             ) : (
-              <Card className="p-8 bg-white border border-border rounded-xl">
+              <Card className="p-8 bg-slate-800 border border-border rounded-xl">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">Name</label>

@@ -81,7 +81,7 @@ export default function Services() {
               <Card
                 key={index}
                 data-index={index}
-                className={`p-8 bg-white border border-border rounded-xl transition-all duration-500 hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-2 group cursor-pointer ${
+                className={`p-8 bg-slate-800 border border-border rounded-xl transition-all duration-500 hover:border-accent hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-2 group cursor-pointer ${
                   visibleCards[index] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >

@@ -64,7 +64,7 @@ export default function Testimonials() {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0 px-4">
-                  <Card className="p-8 md:p-12 bg-white border border-border rounded-2xl max-w-2xl mx-auto">
+                  <Card className="p-8 md:p-12 bg-slate-800 border border-border rounded-2xl max-w-2xl mx-auto">
                     <div className="flex items-start gap-4 mb-6">
                       <Quote className="w-8 h-8 text-accent flex-shrink-0" />
                       <div className="flex gap-1">
